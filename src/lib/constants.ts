@@ -16,19 +16,25 @@ export const intro = {
 };
 
 export const projects = {
-  ytcompanion: {
-    title: "Youtube Companion",
-    techStack: "PostgreSQL, Prisma, NextJs, NextAuth, pgvector, GeminiAI",
+  /*
+Built a full-stack Bookmark Manager with Next.js App Router, Auth.js, Prisma, and PostgreSQL enabling users to save, tag, and filter links.
+- Implemented secure Google OAuth with Auth.js Prisma Adapter; scoped all CRUD to the authenticated user.
+- Designed a modern UI with Tailwind CSS (cards, tag pills, gradient shell) and server action–driven forms.
+- Modeled many-to-many `Bookmark ↔ Tag` relations in Prisma with unique per-user tag constraints.
+- Optimized DX and reliability with server actions, route revalidation, and typed `searchParams` in Next.js 15.
+  */
+  bookmarkManager: {
+    title: "Bookmark Manager",
+    techStack: "PostgreSQL, Prisma, NextJs, NextAuth, TailwindCSS",
     points: [
-      "YouTube Companion Dashboard A mini-dashboard built with the PostgreSQL, Prisma,NextJs, NextAuth, RAG pipeline (pgvector + GeminiAI) integrated with the YouTube Data API.",
-      "Implemented video detail management (update title/description) and comment operations (add, reply, delete).",
-      "Built a notes system with tagging & search, enabling users to organize video improvement ideas.",
-      "Integrated event logging system to capture all actions (video edits, notes, comments) into PostgreSQL.",
-      "Used RAG pipeline (pgvector + GeminiAI) to provide natural-language insights from logs (e.g., activity summaries).",
-      "Deployed full-stack app to Vercel.",
+      "Built a full-stack Bookmark Manager with Next.js App Router, Auth.js, Prisma, and PostgreSQL enabling users to save, tag, and filter links.",
+      "Implemented secure Google OAuth with Auth.js Prisma Adapter; scoped all CRUD to the authenticated user.",
+      "Designed a modern UI with Tailwind CSS (cards, tag pills, gradient shell) and server action–driven forms.",
+      "Modeled many-to-many `Bookmark ↔ Tag` relations in Prisma with unique per-user tag constraints.",
+      "Optimized DX and reliability with server actions, route revalidation, and typed `searchParams` in Next.js 15.",
     ],
-    githubLink: "https://github.com/GautamRaj-1200/yt-companion",
-    deployedLink: "https://yt-companion.vercel.app/",
+    githubLink: "https://github.com/GautamRaj-1200/bookmark-manager",
+    deployedLink: "https://bookmark-manager-gr.vercel.app/",
   },
   legalBlogs: {
     title: "Legal Blogs",

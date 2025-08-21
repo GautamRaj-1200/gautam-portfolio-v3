@@ -1,5 +1,5 @@
 import { projects } from "@/lib/constants";
-import ytCompanion from "../../public/assets/yt-companion-portfolio.jpg";
+import bookmarkManager from "../../public/assets/bookmark-manager-portfolio.jpg";
 import legalBlogs from "../../public/assets/legal-blogs-portfolio.jpg";
 import Image from "next/image";
 const Projects = () => {
@@ -12,9 +12,11 @@ const Projects = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4 tracking-wide">
             <div className="flex flex-row gap-4 items-center">
-              <p className="text-xl font-bold">{projects.ytcompanion.title}</p>
+              <p className="text-xl font-bold">
+                {projects.bookmarkManager.title}
+              </p>
               <a
-                href={projects.ytcompanion.githubLink}
+                href={projects.bookmarkManager.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -23,7 +25,7 @@ const Projects = () => {
                 </p>
               </a>
               <a
-                href={projects.ytcompanion.deployedLink}
+                href={projects.bookmarkManager.deployedLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -32,16 +34,18 @@ const Projects = () => {
                 </p>
               </a>
             </div>
-            <Image
-              src={ytCompanion}
-              alt="yt-companion"
-              className="rounded-md md:w-[700px] h-[400px] w-full"
-            />
+            <div className="md:w-[700px] w-full">
+              <Image
+                src={bookmarkManager}
+                alt="bookmark-manager"
+                className="rounded-md w-[100%] h-[100%] object-cover"
+              />
+            </div>
             <p className="text-[var(--accent-color)]">
-              {projects.ytcompanion.techStack}
+              {projects.bookmarkManager.techStack}
             </p>
             <ul className="list-disc pl-5 flex flex-col gap-1">
-              {projects.ytcompanion.points.map((point, index) => (
+              {projects.bookmarkManager.points.map((point, index) => (
                 <li key={index}>{point}</li>
               ))}
             </ul>
@@ -71,11 +75,13 @@ const Projects = () => {
                 </a>
               </div>
 
-              <Image
-                src={legalBlogs}
-                alt="legal-blogs"
-                className="rounded-md w-[700px] h-[400px]"
-              />
+              <div className="md:w-[700px] w-full h-[400px]">
+                <Image
+                  src={legalBlogs}
+                  alt="legal-blogs"
+                  className="rounded-md w-[100%] h-[100%] object-cover"
+                />
+              </div>
               <p className="text-[var(--accent-color)]">
                 {projects.legalBlogs.techStack}
               </p>
