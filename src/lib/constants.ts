@@ -1,6 +1,18 @@
 export const intro = {
   introduction:
-    "Hi, I'm Gautam — a full-stack developer who loves building, end-to-end products for the web. I'm currently exploring RAG-based applications, and in my spare time I enjoy creating desktop utilities (like a YouTube downloader), writing technical blogs and experimenting with my newly found hobby: origami.",
+    "Hi, I'm Gautam — a full-stack developer passionate about building scalable, end-to-end products for the web.",
+  learning:
+    "Lately, I've been diving deep into RAG-based applications, exploring how they can shape the future of intelligent systems.",
+  hobby1:
+    "Outside of work, I love tinkering with different technologies like I recently built a",
+  techCTA: "YouTube downloader",
+  hobby2: "sharing insights through technical",
+  blogCTA: "blogs",
+  hobby3: "practicing my newly found hobby",
+  origamiCTA: "origami",
+  ytDownloader: "https://gr-youtube-downloader.vercel.app/",
+  myBlog: "https://blogs.gautamraj.space/",
+  origami: "/origami",
 };
 
 export const projects = {

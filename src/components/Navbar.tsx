@@ -21,9 +21,6 @@ const Navbar = () => {
             <li>
               <Link href="#skills">Skills</Link>
             </li>
-            <li>
-              <Link href="/origami">My Origami Journey</Link>
-            </li>
           </ul>
         </nav>
       </header>
