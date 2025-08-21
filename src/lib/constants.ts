@@ -16,7 +16,7 @@ export const projects = {
       "Deployed full-stack app to Vercel.",
     ],
     githubLink: "https://github.com/GautamRaj-1200/yt-companion",
-    deployedLink: "deployed link here",
+    deployedLink: "https://yt-companion.vercel.app/",
   },
   legalBlogs: {
     title: "Legal Blogs",
