@@ -4,8 +4,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <header className="sticky top-0 bg-[var(--background)]/50 backdrop-blur-sm border-b-[0.5px] border-[var(--accent-color)]">
-        <nav className="p-4 flex md:justify-between justify-center items-center flex-wrap  max-w-5xl mx-auto">
+      <header className="sticky top-0 bg-[var(--background)]/50 backdrop-blur-sm border-b-[0.5px] border-[var(--accent-color)] gap-1">
+        <nav className="p-4 flex md:flex-row flex-col md:justify-between justify-center items-center flex-wrap  max-w-5xl mx-auto">
           <Link href="/">
             <h1 className="text-3xl font-semibold">Gautam Raj</h1>
           </Link>
