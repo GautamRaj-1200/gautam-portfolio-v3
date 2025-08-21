@@ -10,8 +10,8 @@ export default function Home() {
       <>
         <div className="my-4 px-4 flex flex-col gap-4">
           <h2 className="text-xl tracking-wide font-semibold text-justify">
-            <p>{intro.introduction}</p>
-            <p>{intro.learning}</p>
+            <p className="mb-1">{intro.introduction}</p>
+            <p className="mb-1">{intro.learning}</p>
             <p>
               {intro.hobby1}{" "}
               <a
